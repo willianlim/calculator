@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Calculator | JavaScript Mini Project</title>
+		<title>Calculator</title>
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	</head>
 	<body>
+		<button class="toggleBtn"></button>
 		<div class="calculator">
 			<div class="buttons" onload="do_the_math()">
 				<h2 id="value"></h2>
@@ -22,8 +23,7 @@
 				<span>1</span>
 				<span>2</span>
 				<span>3</span>
-				<span>0</span>
-				<span>00</span>
+				<span id="zero">0</span>
 				<span>.</span>
 				<span id="equal">=</span>
 			</div>

@@ -10,16 +10,24 @@ function operations() {
 	}
 }
 
+function dark_mode() {
+	let	body;
+
+	body = document.querySelector('body');
+	body.classList.toggle('dark');
+}
+
 window.onload = function do_the_math() {
 	let	btn;
 	let	value;
-	let	buttons;
+	let	toggleBtn;
 
 	btn = document.querySelectorAll('span');
 	value = document.getElementById('value');
-	buttons = document.querySelector('.buttons');
+	toggleBtn = document.querySelector('.toggleBtn');
 
 	for (let i = 0; i < btn.length; i++) {
 		btn[i].addEventListener("click", operations)
 	}
+	toggleBtn.addEventListener("click", dark_mode)
 }
